@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>가상요소</title>
+    <style>
+        .box > p::after {
+            content: '하지만 주말에도 출근';
+            color: saddlebrown;
+        }
+
+        .box > p::before {
+            content: '지금은 수업중';
+            color: darkviolet;
+        }
+        .box::before {
+            width: 1000px;
+            height: 5px;
+            
+        background-color: rgb(235, 127, 143);
+            content:'';
+            display: block;;
+            }
+            .box {
+            width: 1000px;
+            height: 500px;
+            background-color: rgb(126, 210, 231);   
+            }
+            .box::after {
+            width: 1000px;
+            height: 5px;
+            position: relative;;
+            
+        background-color: rgb(156, 37, 183);
+            content:'';
+            display: block;;
+            position:absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>오늘 내일만 버티면 휴일</p>
+    </div>
+</body>
+</html>
