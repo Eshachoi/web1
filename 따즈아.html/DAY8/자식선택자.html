@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>자식선택자</title>
+    <style>
+        .food li:nth-child(2) {
+            color: red;
+        }
+
+        .food > li:nth-child(even) {
+            color: blue;
+        }
+        .food > li:nth-child(odd)
+        color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul class="food">
+        <li>생크림케이크</li>
+        <li>소로루</li>
+        <li>마들렌</li>
+        <li>마늘빵</li>
+        <li>샌드위치</li>
+    </ul>
+</body>
+</html>
