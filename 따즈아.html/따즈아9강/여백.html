@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>여백, 사이즈</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            background-color: lightcyan;
+            width: 300px;
+            height: 300px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 900;
+            padding: 10px 20px 50px 40px;/*두자리-앞:상하, 뒤:좌우/ 네자리(시계방향 top-right-bottom-left)
+            개별부여 가능!(padding-top, -left -bottom, -right 등*/
+            margin: 50px auto;/*패딩과 동일, 두자리, 네자리, 개별부여 가능/전체width100%일때는 적용안 됨
+            auto: 숫자값 auto하면 박스, 블록 요소의 중심 배치*/
+            /*border: 3px solid #000;선, 굵기 스타일 색상=개별부여 가능
+            border-top: 5px solid #000;*/
+            border-width: 10px /*선의 굵기-전체 적용*/;
+            border-color: aqua;/*선의 색상-전체적용*/
+            border-style: solid;/*선의 스타일-전체적용*/
+            border-radius: 0px 10px 30px 0px;/*모서리 둥글게 표현! px, %, 1자리-4개의 모서리 전체/2자리-왼쪽 상단시작 x표시로 적용/4자리(시계방향(왼쪽 상단부터*/
+        }
+
+    </style>
+</head>
+<body>
+    <div>box</div>
+</body>
+</html>
