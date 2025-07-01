@@ -24,19 +24,22 @@
         }
         .b1 {
             background-color: lightgreen;
+            z-index: 99;/*position과 셋트로 사용되는 속성, ~999까지 가능*/
         }
         .b2 {
             background-color: lightskyblue;
-            top: 50%;
-            left: 50%;
+            /*top: 50%;
+            left: 50%;*/
             /*position: absolute 속성을 부여한 후 위치를 잡아줄 때 사용함! 컨테이너(부모요소)를 기준으로 움직임
             위에 컨테이너 포지션 relative 없으면, 브라우저를 중심으로 움직이게 됨*/
-            transform: translate(-50%,-50%);
+            /*transform: translate(-50%,-50%);*/
+            z-index: 1;
         }
         .b3 {
             background-color: lightpink;
-            bottom: 0;
-            right: 0;
+           /* bottom: 0;
+            right: 0;*/
+            z-index: 999;
             
         }
         p {
