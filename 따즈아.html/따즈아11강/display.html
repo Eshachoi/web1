@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>display</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            background-color: aquamarine;
+            width: 300px;
+            height: 100px;
+            margin: 50px;
+            /*모든 css가 적용-block*/
+            /*display: inline;디스플레이 성격활용해 블럭이나 인라인 요소 적용 가능*/
+        }
+        span {
+            background-color: cadetblue;
+            width: 300px;
+            height: 100px;
+            margin: 50px;
+            /*폭, width, height, margin-top, bottom 적용되지 않음*/
+            display: block;/*디스플레이 성격 활용해 인라인이나 블럭 요소 적용 가능!*/
+        }
+    </style>
+</head>
+<body>
+    <!--display: 요소를 어떤 성격을 보여줄지 결정하는 속성
+    block elements: 박스와 같이 쌓이는 성격+화면 전체의 폭을 사용하는 성격: div/h/p/table/ul/ol...
+    inline elements:글자와 같이 나열되는 성격+내용물에 따라 폭이 결정되는 성격: a/span/i/em...-->
+    <div>block01</div>
+    <div>block02</div>
+    <div>block03</div>
+
+    <span>inline01</span>
+    <span>inline02</span>
+    <span>inline03</span>
+</body>
+</html>
