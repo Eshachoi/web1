@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>헤더구조실습</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;/*왜 마진 아닌 패딩 사용?-마진은 보더 바깥영역에 생기게되므로 옆에 색이 채워지지 않으므로 컨텐츠 안쪽으로 패딩 넣는게 낫다! */
+            background-color: beige;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+           
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            
+        }
+        .menu > li > a {/*패딩을 주는 이유: 클릭의 범위가 넓어진다!*/
+            padding: 16px;
+        }
+        .sign_zone {
+            display: flex;
+        }
+        .sign_zone a {/*꺽쇠대신 띄어쓰기-안에있는 전체 선택!*/
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo">
+            LOGO
+        </h1>
+
+        <UL class="menu">
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Skill</a>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </UL>
+        <div class="sign_zone">
+            <div>
+                <a href="#">로그인</a>
+            </div>
+            <div>
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
