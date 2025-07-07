@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>유튜브댓글</title>
+    <script src="https://kit.fontawesome.com/bc44246b88.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff;
+            padding: 20px;
+        }
+        .comment {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .profile_pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        
+        .profile_pic img {
+            width: 100%;
+            height: 100%;
+        }
+        .initial_info {
+            margin-bottom: 5px;
+        }
+        .user_name {
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .time {
+            color: rgb(198, 194, 201);
+        }
+        .comment_body {
+            display: flex;
+            flex-direction: column;
+        }
+        .text {
+            display: block;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .like span {
+            margin-right: 10px;
+        }
+        .like i {
+
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="comment">
+        <div class="profile_pic">
+            <a href="#">
+                <img src="unnamed.jpg" alt="user icon">
+            </a>
+        </div>
+        <div class="comment_body"> 
+        <div class="initial_info">
+            <span class="user_name">@love_music</span>
+            <span class="time">7일 전 </span>
+        </div>
+        </div>
+        <div class="text">
+           <span>이 음악 너무 좋아!!
+</span> 
+        </div>
+        </div>
+        <div class="like">
+            <span>
+                <a href="#">
+                    <i class="fa-regular fa-thumbs-up fa-2xl"></i>
+
+                </a>
+            </span>
+            <span>
+                <a href="#">
+                    <i class="fa-regular fa-thumbs-down fa-2xl"></i>
+                </a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
