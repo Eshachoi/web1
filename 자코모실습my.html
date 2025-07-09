@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        article {
+            margin: 0;
+            padding: 0;
+             display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+        }
+        div > menu1, menu2, menu3 {
+            width: 400px;
+            height: 800px;
+            border: 1px solid#000;
+            object-fit: cover;
+            object-position: center;
+            font-size: medium;
+            font-weight: 900;
+            color: #fff;
+            overflow: hidden;
+            
+        }
+        div > a > img {
+           width: 100%;
+           height: 100%;
+          
+        }
+        .text-overlay1 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            
+        }
+        .text-overlay2 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .text-overlay3 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <article class="container">
+        <div class="menu1"><a href="#">
+            <img src="인테리어1.avif" alt="">
+        </a><span class="text-overlay1">Leather</span></div>
+        <div class="menu2"><a href="#">
+            <img src="인테리어2.jpg" alt="">
+        </a><span class="text-overlay2">Fabric</span></div>
+        <div class="menu3"><a href="#">
+            <img src="인테리어3.webp" alt="">
+        </a><span class="text-overlay3">Material</span></div>
+    </article>
+</body>
+</html>
